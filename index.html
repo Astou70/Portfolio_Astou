@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astou Gueye - Portfolio Géomatique</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- NAVBAR -->
+    <header>
+        <nav class="navbar">
+    <div class="logo">A<span class="highlight">G</span></div>
+    <ul class="nav-menu">
+        <li><a href="#accueil" class="active">Accueil</a></li>
+        <li><a href="#about">À propos</a></li>
+        <li><a href="#projets">Projets</a></li>
+        <li><a href="#competences">Compétences</a></li>
+        <li><a href="#experience">Expérience</a></li>
+        <li><a href="#formation">Formation</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+    
+    <!-- BOUTON MODE SOMBRE/CLAIR -->
+    <button id="theme-toggle" class="theme-toggle">
+        <i class="fas fa-moon"></i>
+    </button>
+    
+    <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </div>
+</nav>
+    </header>
+
+    <!-- SECTION ACCUEIL -->
+    <section id="accueil" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <p class="greeting">Bienvenue sur mon portfolio</p>
+                <h1>Astou <span class="highlight">Gueye</span></h1>
+                <h2 class="typed-text"></h2>
+                <p class="bio">
+                    Étudiante en Géomatique passionnée par le developpement web et la cartographie.
+                    Je transforme les données géographiques en solutions pour l'aménagement du territoire.
+                </p>
+                
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">2+</span>
+                        <span class="stat-label">Années d'étude</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">3+</span>
+                        <span class="stat-label">Projets réalisés</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">2</span>
+                        <span class="stat-label">TP majeurs</span>
+                    </div>
+                </div>
+                <div class="hero-buttons">
+    <a href="#projets" class="btn primary-btn">Voir mes projets</a>
+    <a href="#contact" class="btn secondary-btn">Me contacter</a>
+    <a href="https://github.com/Astou70/Mon_Portfolio/blob/main/CV.jpeg" class="btn outline-btn" download>
+        <i class="fas fa-download"></i> voir mon CV
+    </a>
+    
+    
+</div>
+
+                <div class="social-links">
+                    <a href="https://linkedin.com/in/Astou Gueye" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/Astou70" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="mailto:ag0845714@gmail.com"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+            <div class="hero-image">
+                 <div class="image-wrapper">
+                     <img src="Photo/photo.jpeg" alt="Astou Gueye" class="profile-img">
+                 </div>
+                 <div class="qr-code">
+                     <img src="https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=https://astou70.github.io/Mon_Portfolio/" alt="QR Code Portfolio">
+                     <p>qrcode pour mon portfolio</p>
+                </div>
+            </div>
+            
+            
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <a href="#about"><i class="fas fa-chevron-down"></i></a>
+        </div>
+    </section>
+
+    <!-- SECTION À PROPOS -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">À propos de <span class="highlight">moi</span></h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Qui suis-je ?</h3>
+                    <p>
+                        Je suis une étudiante en Géomatique, passionnée par l'analyse spatiale 
+                        et la cartographie. Mon parcours allie les sciences géographiques 
+                        et les technologies modernes.
+                    </p>
+                    <p>
+                        Actuellement en Licence 2 de Géomatique à l'Université Iba Der Thiam de Thies.
+                    </p>
+                    
+                    <div class="about-info">
+                        <div class="info-item">
+                            <i class="fas fa-map-marked-alt"></i>
+                            <div>
+                                <h4>Spécialisation</h4>
+                                <p>SIG, Cartographie</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-code"></i>
+                            <div>
+                                <h4>Développement</h4>
+                                <p>QGIS, Python (bases)</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-globe-africa"></i>
+                            <div>
+                                <h4>Zone</h4>
+                                <p>Thies, Sénégal</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-language"></i>
+                            <div>
+                                <h4>Langues</h4>
+                                <p>Français, Anglais, Wolof</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <i class="fas fa-project-diagram"></i>
+                        <h3>3+</h3>
+                        <p>Projets</p>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-award"></i>
+                        <h3>2</h3>
+                        <p>TP majeurs</p>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-map"></i>
+                        <h3>10+</h3>
+                        <p>Cartes</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION PROJETS -->
+    <section id="projets" class="projets">
+        <div class="container">
+            <h2 class="section-title">Mes <span class="highlight">Projets</span></h2>
+            
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">Tous</button>
+                <button class="filter-btn" data-filter="analyse">Analyse</button>
+                <button class="filter-btn" data-filter="sig">SIG</button>
+            </div>
+            
+            <div class="projects-grid" id="projects-container"></div>
+        </div>
+    </section>
+
+    <!-- SECTION COMPÉTENCES -->
+    <section id="competences" class="competences">
+        <div class="container">
+            <h2 class="section-title">Mes <span class="highlight">Compétences</span></h2>
+            
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3><i class="fas fa-map"></i> SIG & Cartographie</h3>
+                    <div class="skills-grid" id="sig-skills"></div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3><i class="fas fa-code"></i> Développement</h3>
+                    <div class="skills-grid" id="dev-skills"></div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3><i class="fas fa-chart-bar"></i> Analyse</h3>
+                    <div class="skills-grid" id="data-skills"></div>
+                </div>
+            </div>
+            
+            <div class="software-section">
+                <h3>Logiciels maîtrisés</h3>
+                <div class="software-logos" id="software-skills"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION EXPÉRIENCE ACADÉMIQUE -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">Expérience <span class="highlight">académique</span></h2>
+            
+            <div class="timeline" id="experience-container"></div>
+        </div>
+    </section>
+
+    <!-- SECTION FORMATION -->
+    <section id="formation" class="formation">
+        <div class="container">
+            <h2 class="section-title">Parcours <span class="highlight">académique</span></h2>
+            
+            <div class="timeline" id="formation-container"></div>
+        </div>
+    </section>
+
+    <!-- SECTION CONTACT -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Restons en <span class="highlight">contact</span></h2>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Parlons de votre projet</h3>
+                    <p>Je suis intéressée par des collaborations et opportunités.</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Localisation</h4>
+                                <p>Thies, Sénégal</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>ag0845714@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Téléphone</h4>
+                                <p>+221 76 731 23 61</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-social">
+                        <h4>Suivez-moi</h4>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <form id="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="text" id="firstName" placeholder="Prénom" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" id="lastName" placeholder="Nom" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="email" id="email" placeholder="Email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="text" id="sujet" placeholder="Sujet" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <textarea id="message" rows="6" placeholder="Votre message..." required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn primary-btn">
+                            <i class="fas fa-paper-plane"></i> Envoyer
+                        </button>
+                        
+                        <p id="confirmation" class="confirmation-message"></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>Astou <span class="highlight">Gueye</span></h3>
+                    <p>Étudiante en Géomatique</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Liens</h4>
+                    <ul>
+                        <li><a href="#accueil">Accueil</a></li>
+                        <li><a href="#about">À propos</a></li>
+                        <li><a href="#projets">Projets</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Astou Gueye</p>
+            </div>
+        </div>
+    </footer>
+  
+    <button id="back-to-top" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="app.js"></script>
+</body>
+</html>
