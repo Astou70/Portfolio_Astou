@@ -314,16 +314,29 @@ body {
 .image-wrapper {
     position: relative;
     display: inline-block;
+    flex-shrink; 0;
 }
-/* ===== CONTENEUR PHOTO + QR CODE ===== */
 .hero-image {
     display: flex;
     align-items: center;
-    gap: 30px;
+    justify-content: center;
+    gap: 40px;
     flex-wrap: wrap;
 }
 
-/* ===== QR CODE ===== */
+.image-wrapper {
+    flex-shrink: 0;
+}
+
+.profile-img {
+    width: 300px;
+    height: auto;
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    border: 4px solid #ffd700;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+    animation: float 6s ease-in-out infinite;
+}
+
 .qr-code {
     text-align: center;
     background: white;
@@ -331,9 +344,6 @@ body {
     border-radius: 12px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.2);
     transition: transform 0.3s ease;
-    margin-top: 420px;
-    margin-left: 35px;
-
 }
 
 .qr-code:hover {
@@ -341,16 +351,15 @@ body {
 }
 
 .qr-code img {
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     display: block;
 }
 
 .qr-code p {
-    font-size: 11px;
-    margin-top: 6px;
+    font-size: 10px;
+    margin-top: 5px;
     color: #2c3e50;
-    font-weight: bold;
 }
 
 .scroll-indicator {
