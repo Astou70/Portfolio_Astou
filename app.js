@@ -8,7 +8,7 @@ const portfolioData = {
     projects: [
         {
             id: 1,
-            title: "Qualite de ",
+            title: "Qualite de l'air ",
             category: "analyse",
             image: "photo/projet1_analyse3_air.png",
             description: "Analyse spatiale des zones à risque d'inondation à Dakar à partir de MNT et d'images satellites.",
