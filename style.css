@@ -1287,9 +1287,9 @@ body.dark-mode .timeline-content h4 {
 }
 
 body.dark-mode .timeline-content p {
-    color: #dddddd;
+    color: #ffffff ;
+    font-weight: 400;
 }
-
 body.dark-mode .timeline-content ul {
     color: #dddddd;
 }
@@ -1614,10 +1614,7 @@ body.dark-mode .timeline-content h4 {
     font-weight: 500;
 }
 
-body.dark-mode .timeline-content p {
-    color: #dddddd;
-    line-height: 1.6;
-}
+
 
 body.dark-mode .timeline-content ul {
     list-style: none;
@@ -1740,3 +1737,9 @@ body.dark-mode .contact-item i {
 }
 
 
+/* ===== FORCER LA LISIBILITÉ DES DESCRIPTIONS EN MODE SOMBRE ===== */
+body.dark-mode .timeline-content p {
+    color: #ffffff !important;
+    font-weight: 400 !important;
+    line-height: 1.6 !important;
+}
