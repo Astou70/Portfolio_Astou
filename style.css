@@ -1743,3 +1743,20 @@ body.dark-mode .timeline-content p {
     font-weight: 400 !important;
     line-height: 1.6 !important;
 }
+
+/* ===== AMÉLIORATION FINALE : EXPÉRIENCE ET FORMATION EN MODE SOMBRE ===== */
+
+/* Pour la section Formation (comme pour Expérience) */
+body.dark-mode .timeline-content li {
+    color: #f0f0f0 !important;  /* Blanc cassé pour meilleur contraste */
+    font-weight: 400;
+}
+
+body.dark-mode .timeline-content li::before {
+    color: #ffd700 !important;  /* ✅ en or pour bien ressortir */
+}
+
+body.dark-mode .timeline-content p {
+    color: #ffffff !important;
+    font-weight: 400;
+}
