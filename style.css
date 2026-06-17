@@ -1760,3 +1760,11 @@ body.dark-mode .timeline-content p {
     color: #ffffff !important;
     font-weight: 400;
 }
+/* ===== FORCER LE FOND DES CARTES EN MODE SOMBRE ===== */
+body.dark-mode .timeline-content {
+    background: #2c2c3a !important;  /* Fond gris foncé */
+    color: #ffffff;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+
