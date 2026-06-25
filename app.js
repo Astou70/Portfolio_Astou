@@ -678,25 +678,38 @@ function initThemeToggle() {
 }
 
 // ==========================================
-// FORCER LE FOND DES CARTES EN MODE SOMBRE
+// FORCER LE FOND DES CARTES EN MODE SOMBRE - VERSION ULTIME
 // ==========================================
 function forceDarkModeCards() {
+    console.log("ForceDarkModeCards exécuté");
     if (document.body.classList.contains('dark-mode')) {
+        console.log("Mode sombre détecté, application du fond sombre...");
         document.querySelectorAll('.timeline-content').forEach(function(card) {
+            card.style.setProperty('background-color', '#2c2c3a', 'important');
+            card.style.setProperty('color', '#ffffff', 'important');
+            card.style.setProperty('background', '#2c2c3a', 'important');
+            card.style.background = '#2c2c3a';
             card.style.backgroundColor = '#2c2c3a';
-            card.style.color = '#ffffff';
+            console.log("Fond appliqué à une carte");
         });
     }
 }
 
 // Exécuter au chargement
 document.addEventListener('DOMContentLoaded', function() {
-    forceDarkModeCards();
+    console.log("DOM chargé, exécution de forceDarkModeCards");
+    setTimeout(forceDarkModeCards, 300);
 });
 
 // Exécuter quand on clique sur le bouton mode sombre
 document.addEventListener('click', function(e) {
     if (e.target.closest('#theme-toggle')) {
-        setTimeout(forceDarkModeCards, 200);
+        console.log("Bouton mode sombre cliqué");
+        setTimeout(forceDarkModeCards, 400);
     }
+});
+
+// Exécuter aussi quand la page change (pour être sûr)
+window.addEventListener('load', function() {
+    setTimeout(forceDarkModeCards, 500);
 });
