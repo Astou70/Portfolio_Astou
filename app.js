@@ -676,3 +676,27 @@ function initThemeToggle() {
         }
     });
 }
+
+// ==========================================
+// FORCER LE FOND DES CARTES EN MODE SOMBRE
+// ==========================================
+function forceDarkModeCards() {
+    if (document.body.classList.contains('dark-mode')) {
+        document.querySelectorAll('.timeline-content').forEach(function(card) {
+            card.style.backgroundColor = '#2c2c3a';
+            card.style.color = '#ffffff';
+        });
+    }
+}
+
+// Exécuter au chargement
+document.addEventListener('DOMContentLoaded', function() {
+    forceDarkModeCards();
+});
+
+// Exécuter quand on clique sur le bouton mode sombre
+document.addEventListener('click', function(e) {
+    if (e.target.closest('#theme-toggle')) {
+        setTimeout(forceDarkModeCards, 200);
+    }
+});
