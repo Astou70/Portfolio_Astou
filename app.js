@@ -352,9 +352,9 @@ function displayExperience() {
                 <h3>${exp.title}</h3>
                 <h4>${exp.company} • ${exp.location}</h4>
                 <p>${exp.description}</p>
-                <ul style="margin-top: 1rem; padding-left: 1.5rem;">
-                    ${exp.achievements.map(ach => `<li style="margin-bottom: 0.3rem; color: #666;">✓ ${ach}</li>`).join('')}
-                </ul>
+                <ul class="timeline-achievements">
+                ${exp.achievements.map(ach => `<li>✓ ${ach}</li>`).join('')}
+            </ul>
             </div>
         </div>
     `).join('');
@@ -677,39 +677,3 @@ function initThemeToggle() {
     });
 }
 
-// ==========================================
-// FORCER LE FOND DES CARTES EN MODE SOMBRE - VERSION ULTIME
-// ==========================================
-function forceDarkModeCards() {
-    console.log("ForceDarkModeCards exécuté");
-    if (document.body.classList.contains('dark-mode')) {
-        console.log("Mode sombre détecté, application du fond sombre...");
-        document.querySelectorAll('.timeline-content').forEach(function(card) {
-            card.style.setProperty('background-color', '#2c2c3a', 'important');
-            card.style.setProperty('color', '#ffffff', 'important');
-            card.style.setProperty('background', '#2c2c3a', 'important');
-            card.style.background = '#2c2c3a';
-            card.style.backgroundColor = '#2c2c3a';
-            console.log("Fond appliqué à une carte");
-        });
-    }
-}
-
-// Exécuter au chargement
-document.addEventListener('DOMContentLoaded', function() {
-    console.log("DOM chargé, exécution de forceDarkModeCards");
-    setTimeout(forceDarkModeCards, 300);
-});
-
-// Exécuter quand on clique sur le bouton mode sombre
-document.addEventListener('click', function(e) {
-    if (e.target.closest('#theme-toggle')) {
-        console.log("Bouton mode sombre cliqué");
-        setTimeout(forceDarkModeCards, 400);
-    }
-});
-
-// Exécuter aussi quand la page change (pour être sûr)
-window.addEventListener('load', function() {
-    setTimeout(forceDarkModeCards, 500);
-});

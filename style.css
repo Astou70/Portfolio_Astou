@@ -1767,4 +1767,9 @@ body.dark-mode .timeline-content {
     box-shadow: 0 5px 15px rgba(0,0,0,0.3);
 }
 
+/* ===== SECTIONS EXPÉRIENCE ET FORMATION ===== */
+body.dark-mode .experience,
+body.dark-mode .formation {
+    background: #2c2c3a;
+}
 
